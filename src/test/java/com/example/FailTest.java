@@ -9,6 +9,6 @@ class FailTest {
     void thisWillFail() {
         int result = 2 + 2;
         // わざと間違えた期待値
-        assertEquals(5, result, "2+2 should NOT equal 5");
+        assertEquals(4, result, "2+2 should NOT equal 4");
     }
 }
