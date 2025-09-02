@@ -12,14 +12,21 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+<dependencies>
+    <!-- JUnit5: テスト用 -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.9.3</version>
+        <scope>test</scope>
+    </dependency>
 
-    <dependencies>
-        <!-- JUnit5 -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <!-- Guava: ユーティリティライブラリ -->
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>32.1.2-jre</version>
+    </dependency>
+</dependencies>
+
 </project>
