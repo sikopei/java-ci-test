@@ -1,0 +1,23 @@
+name: Run SuccessTest Only
+
+on:
+  push:
+    branches: [main]   # mainブランチにpushしたときのみ実行
+
+jobs:
+  test:
+    name: Run SuccessTest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Run only SuccessTest
+        run: mvn -B clean test --file pom.xml -Dtest=com.example.seiko1Test
