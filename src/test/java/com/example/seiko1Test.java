@@ -7,7 +7,7 @@ public class seiko1Test {
 
     @Test
     void testAddition() {
-        // このテストは必ず成功します
+        // このテストは必ず成功しま
         assertEquals(2, 1 + 1, "1 + 1 は 2 であるべき");
     }
 
