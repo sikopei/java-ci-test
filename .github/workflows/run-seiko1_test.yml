@@ -2,7 +2,7 @@ name: Run SuccessTest Only
 
 on:
   push:
-    branches: [main]   # mainブランチにpushしたときのみ実行
+    branches: [main]   # main ブランチに push した時に実行
 
 jobs:
   test:
