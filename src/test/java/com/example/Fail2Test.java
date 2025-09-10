@@ -6,7 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FailTest {
 
     @Test
-    void testFailure() {
-        fail("このテストは意図的に失敗します");
+    void thisWillFail() {
+        int result = 2 + 2;
+        // わざと間違えた期待値
+        assertEquals(4, result, "2+2 should NOT equal 4");
     }
 }
